@@ -26666,6 +26666,10 @@ if(out.grounded){
     out.body.velocity.z/=dt*out.friction+1
 }
             
+            if((user.keys[' '] || jumpingButton) && !out.grounded && !out.isGliding){
+    out.body.velocity.y += out.jumpPower * 0.15
+}
+            
             let touchedJumped
 
             if(TIME-jumpingOnce<0.1){
