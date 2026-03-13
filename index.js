@@ -26632,13 +26632,13 @@ function BeeSwarmSimulator(DATA){
                 out.body.velocity.y=out.gliderFall
             }
             
-            if(out.grounded){
-                
-                if(out.isGliding){
-                    
-                    out.isGliding=false
-                    out.updateGear(true)
-                }
+           if(out.grounded){
+    
+    if(out.isGliding && !(user.keys[' '] || jumpingButton)){
+        
+        out.isGliding=false
+        out.updateGear(true)
+    }
                 
                 out.removeAirFrictionUntilGrounded=false
                 
@@ -34759,5 +34759,6 @@ function BeeSwarmSimulator(DATA){
     }
     
 }
+
 
 
