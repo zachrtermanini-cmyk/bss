@@ -456,7 +456,7 @@ window.playerGear={
             applyStats:function(stats,player){
                 
                 stats.gliderSpeed=60*7
-                stats.gliderFall=+5*0.75
+                stats.gliderFall=-0*0.75
             },
             desc:'A parachute you can use to glide down the mountain and reach new places!<br><br>Press jump while in the air to open. ',
             cost:['500000 honey'],
@@ -480,7 +480,7 @@ window.playerGear={
             applyStats:function(stats,player){
                 
                 stats.gliderSpeed=60
-                stats.gliderFall=+5
+                stats.gliderFall=-0
             },
             desc:'Floats much faster than the Parachute, allowing you to fly through the sky!<br><br>Press jump while in the air to open. ',
             cost:['5000000 honey'],
